@@ -1,0 +1,14 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, serif;
+  background: #f4f4f4;
+}
+
+/*# sourceMappingURL=index.css.map */

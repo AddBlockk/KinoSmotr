@@ -1,0 +1,31 @@
+.sidebar {
+  max-width: 182px;
+  margin-left: 50px;
+  padding-top: 30px;
+  padding-right: 16px;
+  border-right: #a1a1a1 1px solid;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 30px);
+  overflow-y: auto;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  margin-bottom: 16px;
+}
+.sidebar ul .active {
+  color: black;
+  font-weight: bold;
+}
+.sidebar ul a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  transition: 200ms ease-in-out;
+}
+.sidebar ul a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

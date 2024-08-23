@@ -1,0 +1,12 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.home {
+  color: black;
+  display: flex;
+  background: white;
+}
+
+/*# sourceMappingURL=home.css.map */

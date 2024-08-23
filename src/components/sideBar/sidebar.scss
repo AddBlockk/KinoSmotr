@@ -1,0 +1,29 @@
+.sidebar {
+  max-width: 182px;
+  margin-left: 50px;
+  padding-top: 30px;
+  padding-right: 16px;
+  border-right: #a1a1a1 1px solid;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 30px);
+  overflow-y: auto;
+  ul {
+  list-style: none;
+    li {
+      margin-bottom: 16px;
+    }
+    .active {
+      color:black;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: #00000099;
+      transition: 200ms ease-in-out;
+      &:hover {
+        color:black;
+      }
+    }
+  }
+}

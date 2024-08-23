@@ -1,0 +1,32 @@
+.ticketFilm {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.ticketFilm .filmsTickets-container {
+  width: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.ticketFilm .filmsTickets-container p {
+  margin-bottom: 4px;
+}
+.ticketFilm img {
+  object-fit: cover;
+  display: flex;
+  transition: transform 0.3s ease;
+  transform: scale(100%);
+}
+.ticketFilm img:hover {
+  transform: scale(105%);
+}
+.ticketFilm .filmsTickets {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
+/*# sourceMappingURL=buyTickets.css.map */

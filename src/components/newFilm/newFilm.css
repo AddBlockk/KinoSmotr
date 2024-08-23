@@ -1,0 +1,31 @@
+.newFilm {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.newFilm .film-container {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.newFilm img {
+  overflow: hidden;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  width: 240px;
+  transform: scale(105%);
+  height: 300px;
+}
+.newFilm img:hover {
+  transform: scale(100%);
+}
+.newFilm .filmVoron {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=newFilm.css.map */

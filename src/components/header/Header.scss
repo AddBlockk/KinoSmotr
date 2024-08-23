@@ -1,0 +1,49 @@
+$primary-background: #141414;
+$primary-color: #a1a1a1;
+$primary-hover: #ffffff;
+
+.header {
+  height: 72px;
+  background: $primary-background;
+  color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img  {
+  height: 36px;
+  }
+
+  .header-nav {
+    padding: 0 34px 0 50px;
+    width: 100%;
+    max-width: 1196px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search {
+    justify-content: end;
+    display: flex;
+    height: 33px;
+    gap: 20px;
+    flex-grow: 1;
+    input {
+      flex: 1 1 330px;
+      min-width: 100px;
+      max-width: 330px;
+      border-radius: 100px;
+      padding-left: 10px;
+    }
+    a {
+      align-items: center;
+      display: flex;
+      color: $primary-color;
+      text-decoration: none;
+      transition: 200ms ease-in-out;
+    }
+    a:hover {
+      color: $primary-hover;
+    }
+  }
+}
