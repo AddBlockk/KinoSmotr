@@ -1,7 +1,8 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/home/Home.tsx";
-import Login from "./pages/Login.tsx";
-import Register from "./pages/Register.tsx";
+import SignUp from "./pages/signUp/SignUp.tsx";
+import SignIn from "./pages/signIn/SignIn.tsx";
+import Films from "./pages/films/Films.tsx";
 
 function App() {
     return (
@@ -18,12 +19,16 @@ function App() {
                         }
                     />
                     <Route
-                        path="login"
-                        element=<Login/>
+                        path="films"
+                        element=<Films/>
                     />
                     <Route
-                        path="register"
-                        element=<Register/>
+                        path="signin"
+                        element=<SignIn/>
+                    />
+                    <Route
+                        path="signup"
+                        element=<SignUp/>
                     />
                 </Route>
             </Routes>

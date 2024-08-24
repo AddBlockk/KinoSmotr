@@ -12,9 +12,15 @@ if (rootElement) {
     const root = ReactDOM.createRoot(rootElement);
     root.render(
         <React.StrictMode>
-            <Header/>
-            <App />
-            <Footer/>
+            <div className="wrapper">
+                    <Header/>
+                <div className="main">
+                    <App/>
+                </div>
+                <div className="footer">
+                    <Footer/>
+                </div>
+            </div>
         </React.StrictMode>
     );
 } else {

@@ -1,6 +1,25 @@
 @import "reset";
 
+html,body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, serif;
   background: #f4f4f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-grow: 1;
+  }
 }
+
+

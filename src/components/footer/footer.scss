@@ -3,7 +3,41 @@ $primary-color: #a1a1a1;
 $primary-hover: #ffffff;
 
 .footer {
-  h1 {
-    color:white;
+  background: $primary-background;
+  color: $primary-color;
+  padding-top: 30px;
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-nav {
+      padding: 0 34px 0 50px;
+      width: 100%;
+      max-width: 1196px;
+      ul {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: $primary-color;
+            transition: 200ms ease-in-out;
+            &:hover {
+              color: $primary-hover;
+            }
+          }
+        }
+      }
+      .copyright {
+        border-top: 1px solid $primary-color;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 }
