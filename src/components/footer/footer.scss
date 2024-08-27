@@ -5,13 +5,12 @@ $primary-hover: #ffffff;
 .footer {
   background: $primary-background;
   color: $primary-color;
-  padding-top: 30px;
   .nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
     .footer-nav {
-      padding: 0 34px 0 50px;
+      padding: 30px 34px 0 50px;
       width: 100%;
       max-width: 1196px;
       ul {

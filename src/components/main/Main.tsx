@@ -1,16 +1,18 @@
-import "./main.scss"
-import MainVideo from "../MainVideo/MainVideo.tsx";
-import NewFilm from "../newFilm/NewFilm.tsx";
-import BuyTickets from "../buyTickets/BuyTickets.tsx";
-import {WatchNow} from "../watchNow/WatchNow.tsx";
+import "./Main.scss";
+import MainVideo from "../MainVideo/index.tsx";
+import NewFilm from "../NewFilm/index.tsx";
+import BuyTickets from "../BuyTickets/BuyTickets.tsx";
+// import { WatchNow } from "../WatchNow/WatchNow.tsx";
 
 export function Main() {
-    return (
-        <div className="main">
-            <MainVideo/>
-            <NewFilm/>
-            <BuyTickets/>
-            <WatchNow/>
-        </div>
-    )
+  return (
+    <div className="main">
+      <div className="container">
+        <MainVideo />
+        <NewFilm />
+        <BuyTickets />
+        {/* <WatchNow /> */}
+      </div>
+    </div>
+  );
 }

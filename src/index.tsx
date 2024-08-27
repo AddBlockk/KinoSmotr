@@ -1,29 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
-import {Header} from "./components/header/Header.tsx";
-import {Footer} from "./components/footer/Footer.tsx";
+import { BrowserRouter } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
-    // Создаем корневой элемент React
-    const root = ReactDOM.createRoot(rootElement);
-    root.render(
-        <React.StrictMode>
-            <div className="wrapper">
-                    <Header/>
-                <div className="main">
-                    <App/>
-                </div>
-                <div className="footer">
-                    <Footer/>
-                </div>
-            </div>
-        </React.StrictMode>
-    );
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
 } else {
-    // Обрабатываем случай, когда элемент с ID "root" не найден
-    console.error("Root element not found");
+  // Обрабатываем случай, когда элемент с ID "root" не найден
+  console.error("Root element not found");
 }

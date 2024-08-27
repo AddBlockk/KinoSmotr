@@ -1,0 +1,18 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  .films-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    flex-wrap: wrap;
+    .film-title {
+      border: 1px solid black;
+      height: 400px;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+  }
+}

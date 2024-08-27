@@ -1,21 +1,39 @@
-import "./sidebar.scss"
+import { useState } from "react";
+import "./Sidebar.scss";
+import { Link } from "react-router-dom";
 
 export function SideBar() {
-    return (
-        <div className="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="/" className="active">Главная</a></li>
-                    <li><a href="/">Онлайн-кинотеатр</a></li>
-                    <li><a href="./films">Фильмы</a></li>
-                    <li><a href="/">Сериалы</a></li>
-                    <li><a href="/">Телеканалы</a></li>
-                    <li><a href="/">Спорт</a></li>
-                    <li><a href="/">Игры</a></li>
-                    <li><a href="/">Билеты в кино</a></li>
-                    <li><a href="/">Медиа</a></li>
-                </ul>
-            </nav>
-        </div>
-    )
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const catalog = [
+    "Главная",
+    "Онлайн-кинотеатр",
+    "Фильмы",
+    "Сериалы",
+    "Телеканалы",
+    "Спорт",
+    "Игры",
+    "Билеты в кино",
+    "Медиа",
+  ];
+
+  return (
+    <div className="sidebar">
+      <nav>
+        <ul>
+          {catalog.map((value, i) => (
+            <li
+              className={activeIndex === i ? "active" : ""}
+              key={i}
+              onClick={() => {
+                setActiveIndex(i);
+              }}
+            >
+              <Link to="/">{value}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  );
 }
